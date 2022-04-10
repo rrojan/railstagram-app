@@ -56,6 +56,9 @@ group :development do
   # Add rubocop style enforcement
   gem 'rubocop', '~> 1.27'
   gem 'rubocop-rails', '~> 2.14', '>= 2.14.2'
+
+  # Add annotations to model files
+  gem 'annotate', '~> 3.2'
 end
 
 group :test do
