@@ -33,6 +33,16 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  # Rspec for rails
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.1'
+  
+  # Provide pry for rails
+  gem 'pry-rails', '~> 0.3.9'
+  gem 'pry-byebug', '~> 3.9'
+
+  # Manage rails factories
+  gem 'factory_bot_rails', '~> 6.2'
 end
 
 group :development do
@@ -54,6 +64,12 @@ group :test do
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+
+  # Cucumber browser testing
+  gem 'cucumber-rails', '~> 2.5', '>= 2.5.1', require: false
+
+  # Clean database for testing
+  gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
